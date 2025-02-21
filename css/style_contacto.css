@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead{
+    background-image: url('../img/contacto_background.jpg');
+}
+
+/*FORMULARIO*/
+section.formulario{
+    background-color: rgb(209, 207, 207);
+    padding: 1rem;
+    text-align: center;
+}
+
+section.formulario h1{
+    letter-spacing: 0.1rem;
+}
+
+section.formulario :is(input,textarea,button){
+    margin: 0.7rem 0;
+}
+
+section.formulario input#politicas{
+    margin-right: 0.4rem;
+}
+
+section.formulario input:not(#politicas), section.formulario textarea{
+    width: 100%;
+    padding: 1rem;
+}
+
+section.formulario textarea{
+    height: 10rem;
+    resize: none;
+}
+
+section.formulario button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #DE3163;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+}
+
+section.formulario button:hover {
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+
+/*MAPS*/
+section.maps{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(209, 207, 207);
+    text-align: center;
+}
+
+section.maps h1{
+    letter-spacing: 0.1rem;
+}
+
+section.maps iframe{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media screen and (width>=768px) {
+    :root{
+        font-size: 1.3vw;
+    }
+
+    main{
+        padding: 2rem 0;
+    }
+
+    section.formulario{
+        padding: 2rem 4rem;
+    }
+
+    section.maps{
+        padding: 2rem 4rem;
+    }
+
+    .formulario form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .formulario form textarea {
+        grid-column: span 2;
+    }
+
+    .formulario form .checkbox-container {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+    }
+
+    .formulario form button {
+        grid-column: span 2;
+    }
+}

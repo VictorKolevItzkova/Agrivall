@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+/*SECCIÓN CONTACTO*/
+footer div#contacto{
+    display: flex;
+    flex-direction: column;  
+    background-color: #D9D9D9;
+    text-align: center;
+}
+footer div#contacto div{
+    padding: 1rem 1rem;
+}
+
+footer div#contacto div:last-child h2{
+    text-align: center;
+}
+
+footer div#contacto div:last-child{
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+footer div#contacto div:last-child *{
+    margin: 0.5rem;
+}
+footer div#contacto div img{
+    width: 100%;
+}
+
+/*SECCIÓN INFORMACIÓN*/
+footer div#foot-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E4AAC0;
+}
+
+footer div#foot-info :is(#foot-info-tienda,#foot-info-info){
+    text-align: center;
+    padding: 1rem;
+}
+
+footer div#foot-info :is(#foot-info-tienda,#foot-info-info) p{
+    color: #5E5E5E;
+    margin: 0.5rem 0;
+}
+
+footer div#foot-info div#foot-info-cert{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+footer div#foot-info div#foot-info-cert div img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    footer{
+        flex-direction: row;
+    }
+
+    footer div#contacto{
+        width: 40%;
+        padding: 1rem;
+    }
+
+    footer div#contacto div:last-child{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*DESPLEGAR IMAGENES Y TEXTOS*/
+    footer div#foot-info{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "inftie fooinf fooinf"
+                             "infcer infcer infcer";
+    }
+
+    footer div#foot-info div#foot-info-tienda{
+        grid-area: inftie;
+    }
+
+    footer div#foot-info div#foot-info-info{
+        grid-area: fooinf;
+    }
+
+    footer div#foot-info :is(#foot-info-tienda,#foot-info-info){
+        text-align: left;
+    }
+
+    footer div#foot-info div#foot-info-cert{
+        grid-area: infcer;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    footer div#foot-info div#foot-info-cert img{
+        width: 10rem;
+    }
+}

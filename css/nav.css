@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+nav#devPhone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav#devPhone>div>img{
+    width: 100%;
+}
+
+/*MENÚ DESPLEGABLE OCULTO*/
+aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s ease-in-out;
+    z-index: 5;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+aside li {
+    margin: 2rem 0;
+}
+
+/*ESTILOS ENLACE*/
+aside li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+/* Línea animada */
+aside li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Aparece la línea solo cuando el ratón está encima */
+aside li a:hover::after {
+    width: 100%;
+}
+
+/*X Cerrar desplegable*/
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+aside.active {
+    left: 0;
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav#devDesk {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    nav#devPhone {
+        display: none;
+    }
+    nav#devDesk {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    nav#devDesk div img{
+        width: 20rem;
+    }
+
+    nav#devDesk ul:not(.submenu){
+        width: 70%;
+        padding-left: 1rem;
+        display: flex;
+        list-style: none;
+    }
+
+    nav#devDesk ul li a{
+        display: block;
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        color: black;
+        transition: color 0.2s ease;
+    }
+
+    nav#devDesk ul li a:hover{
+        color: #228B22;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        list-style: none;
+        background-color: #fff;
+        box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        z-index: 10;
+    }
+    
+    .submenu li:nth-child(even){
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    /* Mostrar el submenu al hacer hover */
+    .desplegable:hover .submenu {
+        display: block;
+    }
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead{
+    background-image: url('../img/casilla_background.jpg');
+}
+
+/*SECCIÓN TEXTO+IMAGEN*/
+section.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(to bottom, #f8e7e7 80%, white 20%);
+    margin: 1rem 0;
+
+}
+
+/* Contenedor del texto */
+div.history-info {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+div.history-info p {
+    line-height: 1.8rem;
+    margin: 0.7rem 0;
+}
+
+.history-fondo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div.history-image {
+    width: 90%;
+    
+}
+
+div.history-image img {
+    width: 100%;
+    height: auto;
+}
+div.history-info h1{
+    text-align: center;
+}
+
+
+@media screen and (width>=768px) {
+    :root{
+        font-size: 1.3vw;
+    }
+
+    section.history-section {
+        flex-direction: row;
+        height: 100%;
+        background: linear-gradient(to right, #f8e7e7 70%, white 30%);
+    }
+
+    section.history-section:nth-child(odd){
+        flex-direction: row-reverse;
+        background: linear-gradient(to left, #f8e7e7 70%, white 30%);
+    }
+
+    div.history-info {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .history-fondo {
+        width: 80%;
+        height: 100%;
+    }
+
+    div.history-image {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    div.history-info h1{
+        text-align: left;
+    }
+}

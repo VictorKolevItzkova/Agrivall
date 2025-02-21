@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead {
+    background-image: url('../img/blog_background.jpg');
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+main h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main h2{
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+main div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+main ul{
+    padding-left: 3rem;
+}
+
+@media screen and (width>=768px) {
+    :root {
+        font-size: 1.3vw;
+    }
+
+    main{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+}

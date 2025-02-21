@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead{
+    background-image: url('../img/cherries_background.jpg');
+}
+
+section.product-section {
+    padding: 2rem;
+}
+
+section.product-section div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.product-section div:first-child div.product-image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+section.product-section div:first-child div.product-info h1 {
+    font-size: 1.5em;
+}
+
+section.product-section div:first-child .product-info h2 {
+    color: #333;
+    margin: 1rem 0;
+}
+
+section.product-section div:first-child .product-info hr{
+    margin: 1rem 0;
+}
+
+section.product-section div:first-child .product-info h3 {
+    text-align: left;
+}
+
+section.product-section div:first-child .product-info select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+section.product-section div:first-child button {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+section.product-section div:first-child button:hover {
+    background-color: #1d751d;
+}
+
+section.product-section>div:last-child {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+section.product-section>div:last-child input[type="radio"] {
+    display: none;
+}
+
+section.product-section>div:last-child label {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.1rem;
+    border-bottom: 2px solid transparent;
+}
+
+section.product-section>div:last-child input[type="radio"]:checked + label {
+    border-bottom: 2px solid #000;
+}
+
+section.product-section>div:last-child>div {
+    margin-top: 1rem;
+    text-align: left;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+@media screen and (width>=768px) {
+    :root{
+        font-size: 1.3vw;
+    }
+
+    section.product-section div:first-child {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .product-image, .product-info {
+        flex: 1;
+    }
+    
+    .product-info {
+        margin-left: 20px;
+    }
+    
+    .product-info {
+        text-align: left;
+    }
+
+    section.product-section div:first-child button  {
+        width: auto;
+    }
+}

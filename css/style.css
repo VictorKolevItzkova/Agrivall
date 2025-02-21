@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-family: Arial, sans-serif;
+    font-size: 3vw;
+}
+
+
+/*****CARRUSEL*******/
+section#container-slider {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+/*CONTENEDOR DE IMAGENES*/
+section#container-slider ul#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50rem;
+    min-height: 14rem;
+}
+
+/*IMAGENES*/
+section#container-slider ul#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+/*FLECHITAS*/
+section#container-slider .arrowPrev, section#container-slider .arrowNext {
+    font-size: 2em;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+section#container-slider .arrowPrev {
+    left: 0.7rem;
+}
+
+section#container-slider .arrowNext {
+    right: 0.7rem ;
+}
+
+/*TEXTO Y BOTON*/
+div.content_slider {
+    padding: 1rem 2rem;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content_slider div {
+    text-align: center;
+}
+
+div.content_slider h2 {
+    font-family: 'arial';
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+div.content_slider p {
+    font-size: 1.2em;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+#slider li .content_slider {
+    background: rgba(0, 0, 0, 0.50);
+    padding: 1rem 2rem;
+}
+
+a.btnSlider {
+    position: relative;
+    top: 2rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'arial';
+    letter-spacing: 0.1em;
+    padding: 1rem 3rem;
+    border: 0.1rem solid #CCC;
+    background: rgba(13, 13, 13, 0.55);
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+a.btnSlider:hover {
+    background: #DE3163;
+    border: 0.1rem solid #111;
+}
+
+/*BOTONES PASO DE IMAGENES*/
+section#container-slider ul.listslider {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+section#container-slider ul.listslider li {
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+section#container-slider ul.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item-select-slid {
+    background: #ffffff;
+}
+
+/*REVIEWS*/
+section#reviews{
+    background-color: #5f5f5f;
+    padding: 1rem;
+}
+
+/*CABECERA*/
+section#reviews>div{
+    text-align: center;
+    margin: 2rem 0;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+section#reviews > div::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 3px;
+    background-color: rgb(245, 37, 37);
+    margin: 0.5rem auto 0;
+}
+
+section#reviews>div p{
+    margin: 1rem 0;
+}
+
+/*ARTICULO CON CARDS*/
+section#reviews article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section#reviews div.card-review{
+    padding: 2.5rem 1rem;
+    margin: 1rem;
+    background-color: #b4b0b0;
+}
+
+section#reviews article>div:not(#review1){
+    display: none;
+}
+
+section#reviews div.card-review *{
+    margin: 0.5rem;
+}
+
+section#reviews div.card-review i{
+    color: #efbf04;
+}
+
+section#reviews div.user-review img{
+    width: 4rem;
+}
+
+section#reviews div.user-review{
+    display: flex;
+}
+
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 1.3vw;
+    }
+
+    /*carrusel*/
+    ul#slider {
+        height: 100vh;
+        min-height: 15rem;
+    }
+
+    div.content_slider {
+        padding: 2rem 3rem;
+    }
+
+    div.content_slider h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    div.content_slider p {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+
+    #slider li .content_slider {
+        padding: 2rem 8rem;
+    }
+
+    .btnSlider {
+        padding: 1rem 3rem;
+        font-size: 1em;
+    }
+
+    section#container-slider .arrowPrev, section#container-slider .arrowNext {
+        font-size: 2em;
+    }
+
+    section#container-slider .arrowPrev {
+        left: 1rem;
+    }
+
+    section#container-slider .arrowNext {
+        right: 1rem ;
+    }
+
+    .listslider li {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    /*REVIEWS OCULTAS*/
+    section#reviews article>div:not(#review1){
+        display: initial;
+    }
+}

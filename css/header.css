@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4F4F4F;
+    color: white;
+    padding: 2rem 1rem;
+}
+/*EMAIL + TELEFONO*/
+header .contact-info {
+    display: flex;
+    gap: 1rem;
+}
+
+header .contact-info i {
+    margin-right: 0.5rem;
+    font-size: 1.4em;
+}
+
+/*REDES SOCIALES*/
+header .social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .social a {
+    color: white;
+    text-decoration: none;
+}
+
+.social a i {
+    color: white;
+    font-size: 1.4em;
+}
+
+header .lang {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    header .contact-info i {
+        font-size: 0.9rem;
+    }
+
+    header .contact-info span {
+        font-size: 0.7rem;
+    }
+
+    .social a i:not(.fa-solid) {
+        font-size: 0.9em;
+    }
+
+    .social a i.fa-solid {
+        font-size: 1em;
+    }
+}

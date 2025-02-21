@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+div#imgHead{
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+.migaspan {
+    background-color: #B22222;
+    color: white;
+    padding: 0.5rem 7rem;
+    display: inline-block;
+    border-radius: 10rem;
+}
+
+.migaspan h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.migaspan p {
+    font-size: 1.2rem;
+}
+
+.migaspan a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.migaspan a:hover {
+    text-decoration: underline;
+}

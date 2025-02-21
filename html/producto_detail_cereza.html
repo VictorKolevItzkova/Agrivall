@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerezas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/migaspan.css">
+    <link rel="stylesheet" href="../css/style_producto_detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <span><i class="fa-regular fa-envelope"></i> email@email.com</span>
+            <span><i class="fa-solid fa-phone"></i> 123456789</span>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+            <span class="lang">ES</span>
+        </div>
+    </header>
+    <nav id="devPhone">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+
+        <div>
+            <a href="./index.html">
+                <img src="../img/Agrivall_Logo_Alone.svg" alt="Logo">
+            </a>
+        </div>
+
+        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+    </nav>
+    <nav id="devDesk">
+        <div>
+            <a href="./index.html">
+                <img src="../img/Agrival_Logo_Completo.svg" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Inicio
+                </a>
+            </li>
+            <li class="desplegable">
+                <a href="#">
+                    E-commerce <i class="fa-solid fa-sort-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="./productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="./la_casilla.html">La Casilla</a>
+                    </li>
+                    <li>
+                        <a href="./hierbas_comestibles.html">Hierbas Comestibles</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./historia.html">
+                    Historia
+                </a>
+            </li>
+            <li>
+                <a href="./contacto.html">
+                    Contacto
+                </a>
+            </li>
+            <li>
+                <a href="./blog.html">
+                    Blog
+                </a>
+            </li>
+        </ul>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <aside id="asideMenu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./la_casilla.html">La Casilla</a></li>
+            <li><a href="./historia.html">Historia</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div id="imgHead">
+            <div class="migaspan">
+                <h4>CEREZAS</h4>
+                <p>
+                    <a href="./index.html">
+                        Inicio
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="./productos.html">
+                        Productos
+                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Cerezas
+                </p>
+            </div>
+        </div>
+        <section class="product-section">
+            <div>
+                <div class="product-image">
+                    <img src="../img/2-early-lory.png" alt="Early Lory">
+                </div>
+                <div class="product-info">
+                    <h1>Early Lory</h1>
+                    <h2>1,22 €</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati iure officiis, delectus vel consectetur natus? Eius maxime voluptas temporibus accusamus odit nemo laborum, aspernatur saepe recusandae rerum earum iste!</p>
+                    <hr>
+                    <h3>Variedades</h3>
+                    <select name="variedades" id="variedades">
+                        <option value="variedad1">Variedad X</option>
+                        <option value="variedad2">Variedad Y</option>
+                        <option value="variedad3">Variedad Z</option>
+                    </select>
+                    <h3>Formato</h3>
+                    <select name="formato" id="formato">
+                        <option value="2kg">2 Kg</option>
+                        <option value="5kg">5 Kg</option>
+                    </select>
+                    <button>+ AÑADIR AL CARRITO</button>
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="detalle" id="descripcion" checked>
+                <label for="descripcion">Descripción</label>
+                <input type="radio" name="detalle" id="detalle">
+                <label for="detalle">Detalles del Producto</label>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur reprehenderit necessitatibus mollitia quaerat eligendi placeat delectus eaque, perspiciatis alias omnis quas minus voluptate tenetur enim consectetur laborum nisi blanditiis.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contacto">
+            <div>
+                <img src="../img/Agrival_Logo_Completo.svg" alt="Logo">
+            </div>
+            <div>
+                <h2>¿Podemos Ayudarte?</h2>
+                <p><i class="fa-solid fa-phone fa-2x"></i> 123456789</p>
+                <p><i class="fa-regular fa-envelope fa-2x"></i> email@email.com</p>
+            </div>
+        </div>
+        <div id="foot-info">
+            <div id="foot-info-tienda">
+                <h1>TIENDA</h1>
+                <a href="./producto_detail_cereza.html"><p>Cerezas</p></a>
+                <a href="./producto_detail_cereza.html"><p>Albaricoques</p></a>
+                <a href="./producto_detail_cereza.html"><p>Nueces</p></a>
+                <a href="./la_casilla.html"><p>La Casilla</p></a>
+            </div>
+            <div id="foot-info-info">
+                <h1>INFO</h1>
+                <a href="#"><p>Aviso Legal</p></a>
+                <a href="#"><p>Política de Privacidad</p></a>
+                <a href="#"><p>Política de Cookies</p></a>
+                <a href="#"><p>Métodos de Pago</p></a>
+            </div>            
+            <div id="foot-info-cert">
+                <div>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../img/Ministro_Agricultura_Cert.png">
+                        <img src="../img/Ministro_Agricultura_Vertical.png" alt="Certificado Europeo">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById('asideMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="contact-info">
+            <span><i class="fa-regular fa-envelope"></i> email@email.com</span>
+            <span><i class="fa-solid fa-phone"></i> 123456789</span>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-meta"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+            <span class="lang">ES</span>
+        </div>
+    </header>
+    <nav id="devPhone">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+
+        <div>
+            <a href="./index.html">
+                <img src="../img/Agrivall_Logo_Alone.svg" alt="Logo">
+            </a>
+        </div>
+
+        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+    </nav>
+    <nav id="devDesk">
+        <div>
+            <a href="./index.html">
+                <img src="../img/Agrival_Logo_Completo.svg" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Inicio
+                </a>
+            </li>
+            <li class="desplegable">
+                <a href="#">
+                    E-commerce <i class="fa-solid fa-sort-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="./productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="./la_casilla.html">La Casilla</a>
+                    </li>
+                    <li>
+                        <a href="./hierbas_comestibles.html">Hierbas Comestibles</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./historia.html">
+                    Historia
+                </a>
+            </li>
+            <li>
+                <a href="./contacto.html">
+                    Contacto
+                </a>
+            </li>
+            <li>
+                <a href="./blog.html">
+                    Blog
+                </a>
+            </li>
+        </ul>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+    <aside id="asideMenu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./la_casilla.html">La Casilla</a></li>
+            <li><a href="./historia.html">Historia</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="container-slider">
+            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i
+                    class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i
+                    class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+                <li><a href="#" aria-label="itList_0" class="item-select-slid"></a></li>
+                <li><a href="#" aria-label="itList_1"></a></li>
+                <li><a href="#" aria-label="itList_2"></a></li>
+            </ul>
+            <ul id="slider">
+                <li id="img1"
+                    style="background-image: url('../img/fruit-3016761.jpg'); z-index:0; opacity: 1;">
+                    <div class="content_slider">
+                        <div>
+                            <h2>Productos</h2>
+                            <p>"CEREZAS QUE SEDUCE, NUECES QUE NUTREN, ALBARICOQUES QUE ILUMINAN"</p>
+                        </div>
+                        <a href="./productos.html" class="btnSlider">Ver más</a>
+                    </div>
+                </li>
+                <li id="img2"
+                    style="background-image: url('../img/casilla_background.jpg'); ">
+                    <div class="content_slider">
+                        <div>
+                            <h2>La Casilla</h2>
+                            <p>Ubicada en uno de los enclaves más bonitos de la zona del interior de la provincia de Alicante, perteneciente a la Marina Alta.</p>
+                        </div>
+                        <a href="./la_casilla.html" class="btnSlider">Ver más</a>
+                    </div>
+                </li>
+                <li id="img3"
+                    style="background-image: url('../img/hierbas_landing.jpg'); ">
+                    <div class="content_slider">
+                        <div>
+                            <h2>Hierbas Comestibles</h2>
+                            <p>Aprovechamiento de las especies silvestres comestibles en las cubiertas verdes de los frutales</p>
+                        </div>
+                        <a href="./hierbas_comestibles.html" class="btnSlider">Ver más</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="reviews">
+            <div>
+                <h1>TESTIMONIOS</h1>
+                <p>Trabajamos para ofrecer el mejor producto en las mejores condiciones de frescura y sabor</p>
+            </div>
+            <article>
+                <div class="card-review" id="review1">
+                    <div>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="far fa-star fa-2x"></i>
+                    </div>
+                    <h1>EXCELENTE</h1>
+                    <p>Lorem ipsum comentario usuario</p>
+                    <div class="user-review">
+                        <img src="../img/pfp-user.png" alt="Profile Picture">
+                        <div>
+                            <h3>Nombre Usuario</h3>
+                            <small>05/02/2025</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="far fa-star fa-2x"></i>
+                    </div>
+                    <h1>Excelente</h1>
+                    <p>Lorem ipsum comentario usuario</p>
+                    <div class="user-review">
+                        <img src="../img/pfp-user.png" alt="Profile Picture">
+                        <div>
+                            <h3>Nombre Usuario</h3>
+                            <small>05/02/2025</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="fas fa-star fa-2x"></i>
+                        <i class="far fa-star fa-2x"></i>
+                    </div>
+                    <h1>Excelente</h1>
+                    <p>Lorem ipsum comentario usuario</p>
+                    <div class="user-review">
+                        <img src="../img/pfp-user.png" alt="Profile Picture">
+                        <div>
+                            <h3>Nombre Usuario</h3>
+                            <small>05/02/2025</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div id="contacto">
+            <div>
+                <img src="../img/Agrival_Logo_Completo.svg" alt="Logo">
+            </div>
+            <div>
+                <h2>¿Podemos Ayudarte?</h2>
+                <p><i class="fa-solid fa-phone fa-2x"></i> 123456789</p>
+                <p><i class="fa-regular fa-envelope fa-2x"></i> email@email.com</p>
+            </div>
+        </div>
+        <div id="foot-info">
+            <div id="foot-info-tienda">
+                <h1>TIENDA</h1>
+                <a href="./producto_detail_cereza.html"><p>Cerezas</p></a>
+                <a href="./producto_detail_cereza.html"><p>Albaricoques</p></a>
+                <a href="./producto_detail_cereza.html"><p>Nueces</p></a>
+                <a href="./la_casilla.html"><p>La Casilla</p></a>
+            </div>
+            <div id="foot-info-info">
+                <h1>INFO</h1>
+                <a href="#"><p>Aviso Legal</p></a>
+                <a href="#"><p>Política de Privacidad</p></a>
+                <a href="#"><p>Política de Cookies</p></a>
+                <a href="#"><p>Métodos de Pago</p></a>
+            </div>            
+            <div id="foot-info-cert">
+                <div>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../img/Ministro_Agricultura_Cert.png">
+                        <img src="../img/Ministro_Agricultura_Vertical.png" alt="Certificado Europeo">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById('asideMenu').classList.toggle('active');
+        }
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

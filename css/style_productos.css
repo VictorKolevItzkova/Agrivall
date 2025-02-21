@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead{
+    background-image: url('../img/cherries_background.jpg');
+}
+
+/*SECCIÓN TEXTO+IMAGEN*/
+section.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+/* Contenedor del texto */
+div.product-info {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #f8e7e7;
+}
+
+div.product-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.product-image img {
+    width: 100%;
+    height: auto;
+}
+div.product-info h1{
+    text-align: center;
+}
+
+button.buy-button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: box-shadow 0.5s ease;
+}
+
+button.buy-button:hover {
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (width>=768px) {
+    :root{
+        font-size: 1.3vw;
+    }
+
+    section.product-section {
+        flex-direction: row;
+        height: 25rem;
+        gap: 2rem;
+    }
+
+    section.product-section:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    div.product-info {
+        width: 50%;
+        height: 100%;
+        align-content: center;
+    }
+
+    div.product-image {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    div.product-image img{
+        display: none;
+    }
+}

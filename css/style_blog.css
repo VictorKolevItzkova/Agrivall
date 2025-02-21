@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+/*FONDO MIGAS PAN*/
+div#imgHead {
+    background-image: url('../img/blog_background.jpg');
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.2rem;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover{
+    transform: scale(1.01);
+}
+
+.blog-card h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.blog-card img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.blog-card small {
+    color: gray;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-card button {
+    background-color: #DE3163;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.blog-card button:hover {
+    background-color: #28a745;
+}
+
+
+@media screen and (width>=768px) {
+    :root {
+        font-size: 1.3vw;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
