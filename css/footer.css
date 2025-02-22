@@ -27,6 +27,7 @@ footer div#contacto div:last-child{
     padding-left: 3rem;
     padding-right: 3rem;
     font-family: Roboto;
+    font-size: 1.4rem;
 }
 
 footer div#contacto div:last-child *{
@@ -47,6 +48,7 @@ footer div#foot-info{
 footer div#foot-info :is(#foot-info-tienda,#foot-info-info){
     text-align: center;
     padding: 1rem;
+    font-size: 1.4rem;
 }
 
 footer div#foot-info :is(#foot-info-tienda,#foot-info-info) h1{
