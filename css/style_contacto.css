@@ -25,6 +25,7 @@ section.formulario{
 }
 
 section.formulario h1{
+    font-family: Raleway;
     letter-spacing: 0.1rem;
 }
 
@@ -39,6 +40,7 @@ section.formulario input#politicas{
 section.formulario input:not(#politicas), section.formulario textarea{
     width: 100%;
     padding: 1rem;
+    border-radius: 5px;
 }
 
 section.formulario textarea{
@@ -71,6 +73,7 @@ section.maps{
 }
 
 section.maps h1{
+    font-family: Raleway;
     letter-spacing: 0.1rem;
 }
 

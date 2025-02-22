@@ -54,6 +54,7 @@ div.informacion{
 }
 
 div.informacion div{
+    font-family: Lato;
     padding: 1rem;
 }
 
@@ -61,7 +62,8 @@ div.informacion ul{
     list-style: none;
 }
 
-div.informacion div:last-child h2{
+div.informacion div h2{
+    font-family: Raleway;
     margin-bottom: 1rem;
 }
 
@@ -94,12 +96,8 @@ div.reservas{
     gap: 1rem;
 }
 
-div.reservas div:first-child h2{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-div.reservas div:last-child h2{
+div.reservas div h2{
+    font-family: Raleway;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -124,6 +122,7 @@ div.formulario input#politicas{
 div.formulario input:not(#politicas), div.formulario textarea{
     width: 100%;
     padding: 1rem;
+    border-radius: 5px
 }
 
 div.formulario textarea{

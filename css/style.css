@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@import url('./header.css');
+@import url('./nav.css');
+@import url('./footer.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +84,8 @@ div.content_slider div {
 }
 
 div.content_slider h2 {
-    font-family: 'arial';
+    font-family: Quicksand;
+    font-weight: bold;
     font-size: 2rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -89,7 +94,8 @@ div.content_slider h2 {
 
 div.content_slider p {
     font-size: 1.2em;
-    font-family: 'arial';
+    font-family: Quicksand;
+    font-weight: bold;
     color: #FFF;
     margin-bottom: 2rem;
     padding: 0 1rem;
@@ -105,7 +111,7 @@ a.btnSlider {
     top: 2rem;
     color: #FFF;
     font-size: 1rem;
-    font-family: 'arial';
+    font-family: Raleway;
     letter-spacing: 0.1em;
     padding: 1rem 3rem;
     border: 0.1rem solid #CCC;
@@ -176,6 +182,11 @@ section#reviews > div::after {
     margin: 0.5rem auto 0;
 }
 
+section#reviews>div h1{
+    font-family: Raleway;
+    font-weight: bold;
+}
+
 section#reviews>div p{
     margin: 1rem 0;
 }
@@ -204,6 +215,10 @@ section#reviews div.card-review *{
 
 section#reviews div.card-review i{
     color: #efbf04;
+}
+
+section#reviews div.card-review h1{
+    font-family: Lato;
 }
 
 section#reviews div.user-review img{

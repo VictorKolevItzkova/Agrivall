@@ -35,6 +35,17 @@ div.product-info {
     background-color: #f8e7e7;
 }
 
+div.product-info h1{
+    font-family: Raleway;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.product-info p{
+    font-family: Roboto;
+    margin: 0.5rem 0;
+}
+
 div.product-image {
     width: 100%;
     display: flex;
@@ -44,9 +55,6 @@ div.product-image {
 div.product-image img {
     width: 100%;
     height: auto;
-}
-div.product-info h1{
-    text-align: center;
 }
 
 button.buy-button {

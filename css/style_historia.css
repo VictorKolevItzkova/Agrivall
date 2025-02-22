@@ -37,7 +37,12 @@ div.history-info {
     color: black;
 }
 
+div.history-info h1 {
+    font-family: Raleway;
+}
+
 div.history-info p {
+    font-family: Roboto;
     line-height: 1.8rem;
     margin: 0.7rem 0;
 }

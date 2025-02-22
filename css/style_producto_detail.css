@@ -33,12 +33,19 @@ section.product-section div:first-child div.product-image img {
 }
 
 section.product-section div:first-child div.product-info h1 {
+    font-family: Raleway;
+    font-weight: bold;
     font-size: 1.5em;
 }
 
 section.product-section div:first-child .product-info h2 {
+    font-family: Lato;
     color: #333;
     margin: 1rem 0;
+}
+
+section.product-section div:first-child .product-info p {
+    font-family: Lato;
 }
 
 section.product-section div:first-child .product-info hr{
@@ -57,6 +64,7 @@ section.product-section div:first-child .product-info select {
 }
 
 section.product-section div:first-child button {
+    font-family: Roboto;
     background-color: #228B22;
     color: white;
     border: none;
@@ -82,6 +90,8 @@ section.product-section>div:last-child input[type="radio"] {
 }
 
 section.product-section>div:last-child label {
+    font-family: Quicksand;
+    font-weight: bold;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 0 0.1rem;
@@ -93,6 +103,7 @@ section.product-section>div:last-child input[type="radio"]:checked + label {
 }
 
 section.product-section>div:last-child>div {
+    font-family: Lato;
     margin-top: 1rem;
     text-align: left;
     border: 1px solid black;
