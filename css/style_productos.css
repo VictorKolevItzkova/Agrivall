@@ -30,7 +30,7 @@ section.product-section {
 div.product-info {
     text-align: left;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
     background-color: #f8e7e7;
 }
@@ -43,7 +43,6 @@ div.product-info h1{
 
 div.product-info p{
     font-family: Roboto;
-    font-size: 1.4rem;
     margin: 0.5rem 0;
 }
 
