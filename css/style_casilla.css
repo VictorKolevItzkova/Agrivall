@@ -82,12 +82,12 @@ div.informacion table {
 
 div.informacion table tr th:first-child {
     border-top-left-radius: 8px;
-    background-color: #E4AAC0;
+    background-color: var(--dead-red);
 }
 
 div.informacion table tr th:last-child {
     border-top-right-radius: 8px;
-    background-color: #E4AAC0;
+    background-color: var(--dead-red);
 }
 
 div.informacion div:last-child{
@@ -138,7 +138,7 @@ div.formulario textarea{
 div.formulario button {
     width: 100%;
     padding: 1rem;
-    background-color: #DE3163;
+    background-color: var(--light-red);
     color: white;
     border: none;
     border-radius: 0.5rem;

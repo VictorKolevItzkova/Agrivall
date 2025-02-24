@@ -60,7 +60,7 @@ div#imgHead {
 }
 
 .blog-card button {
-    background-color: #DE3163;
+    background-color: var(--light-red);
     color: #fff;
     border: none;
     padding: 0.7rem 2rem;

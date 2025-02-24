@@ -11,7 +11,7 @@ footer{
 footer div#contacto{
     display: flex;
     flex-direction: column;  
-    background-color: #D9D9D9;
+    background-color: var(--dark-white);
     text-align: center;
 }
 footer div#contacto div{
@@ -42,7 +42,7 @@ footer div#foot-info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E4AAC0;
+    background-color: var(--dead-red);
 }
 
 footer div#foot-info :is(#foot-info-tienda,#foot-info-info){

@@ -11,7 +11,7 @@ div#imgHead{
 }
 
 .migaspan {
-    background-color: #B22222;
+    background-color: var(--dark-red);
     color: white;
     padding: 0.5rem 7rem;
     display: inline-block;

@@ -54,7 +54,7 @@ section.formulario textarea{
 section.formulario button {
     width: 100%;
     padding: 1rem;
-    background-color: #DE3163;
+    background-color: var(--light-red);
     color: white;
     border: none;
     border-radius: 0.5rem;

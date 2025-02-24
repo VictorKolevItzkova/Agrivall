@@ -27,7 +27,7 @@ section.history-section {
     align-items: center;
     width: 100%;
     padding: 1rem 0;
-    background: linear-gradient(to bottom, #f8e7e7 80%, white 20%);
+    background: linear-gradient(to bottom, var(--red-pink) 80%, white 20%);
     margin: 1rem 0;
 
 }
@@ -81,12 +81,12 @@ div.history-info h1{
     section.history-section {
         flex-direction: row;
         height: 100%;
-        background: linear-gradient(to right, #f8e7e7 70%, white 30%);
+        background: linear-gradient(to right, var(--red-pink) 70%, white 30%);
     }
 
     section.history-section:nth-child(odd){
         flex-direction: row-reverse;
-        background: linear-gradient(to left, #f8e7e7 70%, white 30%);
+        background: linear-gradient(to left, var(--red-pink) 70%, white 30%);
     }
 
     div.history-info {
