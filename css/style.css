@@ -101,6 +101,10 @@ div.content_slider p {
     padding: 0 1rem;
 }
 
+#slider li#img1{
+    background-image: url('../img/cherries_landing.jpg');
+}
+
 #slider li .content_slider {
     background: rgba(0, 0, 0, 0.50);
     padding: 1rem 2rem;
@@ -252,6 +256,10 @@ section#reviews div.user-review{
     div.content_slider p {
         font-size: 1.4rem;
         margin-bottom: 3rem;
+    }
+
+    #slider li#img1{
+        background-image: url('../img/fruit-3016761.jpg');
     }
 
     #slider li .content_slider {
