@@ -32,6 +32,7 @@ footer div#contacto div:last-child{
 
 footer div#contacto div:last-child *{
     margin: 0.5rem;
+    color: black;
 }
 footer div#contacto div img{
     width: 100%;

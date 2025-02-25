@@ -38,7 +38,7 @@ header .social {
     gap: 1rem;
 }
 
-header .social a {
+header .social a,header .contact-info a{
     color: white;
     text-decoration: none;
 }
